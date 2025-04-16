@@ -1,0 +1,78 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  color: black;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-right: 10px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00bfff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.weather-card {
+  margin-top: 20px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.clear-bg {
+  background: url('/images/clear.jpg');
+}
+.cloudy-bg {
+  background: url('/images/clouds.jpg');
+}
+.rainy-bg {
+  background: url('/images/rain.jpg');
+}
+.snowy-bg {
+  background: url('/images/snow.jpg');
+}
+.default-bg {
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.loader {
+  margin-top: 50px;
+}
+
